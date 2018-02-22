@@ -120,6 +120,10 @@
 
 
   /* image page */
+  .crafts img{
+    display: block;
+    /* to make the gap below the img disappear */
+  }
   .photo-grid{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -165,6 +169,7 @@
   }
   .photo-cell5 img{
     width:100%;
+    height:100%;
   }
 
   .photo-cell6{
