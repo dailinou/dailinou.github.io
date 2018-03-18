@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Challenge Two</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      // YOUR CODE HERE
+      // $('#useBilling').on('change',function(){
+      //   if (this.checked){
+      //     $('#home').val($('#billing').val());
+      //   }
+      //
+      // })
+      $(document).ready(function() {
+        $('#useBilling').on('click',function(){
+					if (this.checked){
+          // if ($('#useBilling').attr('checked')){
+					//The line above doesn't work because attr isn't good at recognizing
+					//the changes.  You can try
+					// if ($('#useBilling').prop('checked')){
+
+            $('#home').val($('#billing').val());
+            // $('#home').val().disabled = true;
+            // $('#home').val().prop('disabled',true);
+            $('#home').prop('disabled',true);
+          }
+          else {
+            $('#home').prop('disabled',false);
+						$('#home').val('');
+        };
+      });
+    });
+        // $('#useBilling').on('click', function(){
+        //   $('#home').val($('#billing').val());
+        // })
+
+
+    </script>
+</head>
+<body>
+    <h1>Challenge Two</h1>
+    <form action="challenge5.html">
+      <fieldset>
+        <legend>Billing Information</legend>
+        <div>
+          <label for ="billing">Billing Address:</label><br>
+          <textarea name="billingAdd" id="billing"></textarea>
+          </label>
+        </div>
+
+        <div>
+          <label for ="home">Home Address:</label><br>
+          <input type="checkbox" name="useBilling" id="useBilling"> Same as above
+          </label>
+        <br>
+        <textarea name="homeAdd" id="home"></textarea>
+        </div>
+        <input type = "submit" value = "Go To Challenge 5">
+      </fieldset>
+</body>
+</html>
