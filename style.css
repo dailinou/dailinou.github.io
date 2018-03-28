@@ -1,0 +1,36 @@
+.each{
+  background-color:#e8eeef;
+  padding: 1% 1%;
+  margin: 1% 1%;
+  display: block;
+  border-radius: 10px;
+}
+
+fieldset{
+  background-color: #f4f7f8;
+  border-radius: 10px;
+  border: 0;
+}
+
+legend{
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.errormessage{
+  display: none;
+  color:red;
+}
+
+html, body, h1, form, fieldset, legend, ol, li {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #ffffff;
+	color: #111111;
+	font-family: Garamond, "Times New Roman", Times, serif;
+	padding: .5%;
+}
