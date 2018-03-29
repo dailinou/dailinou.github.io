@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 body{
   font-family: 'Open Sans';
 }
@@ -40,7 +43,11 @@ nav a{
   border-radius: 0.5em;
   color: black;
 }
-
+.project{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 /* potfolio */
@@ -54,20 +61,26 @@ nav a{
   text-align: center;
 }
 
+.resumepic{
+  width: 80%;
+  margin-top: 10vh;
+}
+.resumecontainer{
+  text-align: center;
+}
 
 @media screen and (min-width:100px) {
-  nav a{
-    display:block;
-  }
   nav{
     padding: 20px 0;
     position: fixed;
     left:0;
     top:0;
     right:0;
-    /* ????? */
     text-align: center;
     background-color: white;
+  }
+  nav a{
+    display: block;
   }
   .logo{
     width: 30vw;
@@ -90,24 +103,26 @@ nav a{
     padding: 20vh 0 5vh 0;
   }
   .project{
-    display: block;
     width: 60vw;
     height: 40vw;
     margin:50px auto;
-    text-align: center;
     background-color: white;
-    /* line-height: 400px; */
-    /* ???? */
-    vertical-align: middle;
+
   }
   .graphicDesign{
     margin-bottom: 10vh;
   }
+  .gridContainer{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
   /* about me */
   #aboutContainer{
     padding: 10vh 0;
     background-image: url('new_orlean.jpg');
     background-size: cover;
+    background-position: center center;
   }
   .aboutTitle{
     font-size: 2em;
@@ -149,6 +164,7 @@ nav a{
     grid-template-columns: 1fr 1fr;
   }
   nav a{
+
     text-decoration: none;
     padding:5px 20px;
     font-size: 20px;
@@ -198,16 +214,10 @@ nav a{
     padding: 150px 0 60px 0;
   }
   .project{
-    display: inline-block;
-    width: 300px;
-    height: 200px;
+    width: 200px;
+    height: 150px;
     margin:50px auto;
-    text-align: center;
     background-color: white;
-    line-height: 200px;
-    /* ???? */
-    vertical-align: middle;
-
   }
 
   .roadlike, .graphicDesign{
@@ -226,7 +236,7 @@ nav a{
     padding: 40px 0;
     background-image: url('new_orlean.jpg');
     background-size: cover;
-    /* ??? */
+    background-position: center center;
   }
   .aboutTitle{
     font-size: 35px;
@@ -317,15 +327,15 @@ nav a{
     padding: 150px 0 60px 0;
   }
   .project{
-    display: inline-block;
+    /* display: inline-block; */
     width: 300px;
     height: 200px;
     margin:50px auto;
     text-align: center;
     background-color: white;
-    line-height: 200px;
+    /* line-height: 200px; */
     /* ???? */
-    vertical-align: middle;
+    /* vertical-align: middle; */
 
   }
 
@@ -345,6 +355,7 @@ nav a{
     padding: 60px 0;
     background-image: url('new_orlean.jpg');
     background-size: cover;
+    background-position: center center;
   }
   .aboutTitle{
     font-size: 35px;
