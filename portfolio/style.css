@@ -1,7 +1,7 @@
 body{
   font-family: 'Open Sans';
 }
-nav a, .name, .uxDesigner, #portfolioTitle, .aboutTitle, footer{
+.name, .uxDesigner, #portfolioTitle, .aboutTitle, footer{
   color: #B28247;
   text-align: center;
 }
@@ -10,33 +10,35 @@ nav a{
   display: inline-block;
   padding:0 20px;
   font-size: 20px;
+  color: #919191;
 }
-nav{
-  padding: 20px 0;
-  position: fixed;
-  left:0;
-  top:0;
-  right:0;
-  /* ????? */
-  text-align: center;
-  background-color: white;
-}
-.logo{
-  width: 160px;
-  display: block;
-  /* ??????? text-align: center; */
-  margin: 0 auto;
-  padding: 100px 0;
-}
-.name{
-  font-size: 70px;
-  letter-spacing: 10px;
-}
-.uxDesigner{
-  font-size: 25px;
-  padding: 40px 0 100px 0;
-  letter-spacing: 5px;
 
+.navhome, .changeColor{
+  color:#B28247;
+}
+
+.library{
+  background-image: url('pictures/library_cover.png');
+  background-size: cover;
+}
+.fHit{
+  background-image: url('pictures/FHit_cover.jpg');
+  background-size: cover;
+}
+.roadlike{
+  background-image: url('pictures/roadlike_cover.jpg');
+  background-size: cover;
+}
+.graphicDesign{
+  background-image: url('pictures/graphicDesign_cover.jpg');
+  background-size: cover;
+}
+.library a, .fHit a, .roadlike a, .graphicDesign a{
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 2em 2em;
+  border-radius: 0.5em;
+  color: black;
 }
 
 
@@ -44,75 +46,332 @@ nav{
 /* potfolio */
 .portfolio{
   background-color: #F5F5F5;
+}
 
-}
-#portfolioTitle{
-  font-size: 35px;
-  padding: 150px 0 60px 0;
-}
-.project{
-  display: inline-block;
-  width: 300px;
-  height: 200px;
-  margin:50px auto;
+
+.resumepage{
+  background-color: red;
   text-align: center;
-  background-color: white;
-  line-height: 200px;
-  /* ???? */
-  vertical-align: middle;
-
-}
-
-.roadlike, .graphicDesign{
-  margin-bottom: 150px;
-}
-
-/* grid */
-.gridContainer{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
 }
 
 
-/* about me */
-#aboutContainer{
-  padding: 60px 0;
-  background-image: url('new_orlean.jpg');
-  background-size: cover;
-}
-.aboutTitle{
-  font-size: 35px;
-  padding: 0 0 50px 0;
-  color:white;
-}
-
-.about{
-  width:400px;
-  margin: 100px auto;
-  padding: 100px 100px;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.aboutContent1, .aboutContent2{
-  color:white;
-}
-.aboutContent1{
-  padding:20px 0;
-}
-
-footer{
-  margin: 30px auto;
-  font-size: 12px;
-
-}
 @media screen and (min-width:100px) {
+  nav a{
+    display:block;
+  }
+  nav{
+    padding: 20px 0;
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    /* ????? */
+    text-align: center;
+    background-color: white;
+  }
+  .logo{
+    width: 30vw;
+    display: block;
+    /* ??????? text-align: center; */
+    margin: 0 auto;
+    padding: 30vh 0 15vh 0;
+  }
+  .name{
+    font-size: 2em;
+    letter-spacing: 0.5em;
+  }
+  .uxDesigner{
+    font-size: 1em;
+    padding: 5vh 0 20vh 0;
+    letter-spacing: 0.3em;
+  }
+  #portfolioTitle{
+    font-size: 2em;
+    padding: 20vh 0 5vh 0;
+  }
+  .project{
+    display: block;
+    width: 60vw;
+    height: 40vw;
+    margin:50px auto;
+    text-align: center;
+    background-color: white;
+    /* line-height: 400px; */
+    /* ???? */
+    vertical-align: middle;
+  }
+  .graphicDesign{
+    margin-bottom: 10vh;
+  }
+  /* about me */
+  #aboutContainer{
+    padding: 10vh 0;
+    background-image: url('new_orlean.jpg');
+    background-size: cover;
+  }
+  .aboutTitle{
+    font-size: 2em;
+    color:white;
+  }
 
+  .about{
+    width:80vw;
+    /* height: */
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 0 auto;
+    padding-top: 5vh;
+  }
+
+  .aboutContent1, .aboutContent2{
+    color:white;
+    margin: 0 5vw;
+  }
+  .aboutContent1{
+    padding:2em 0;
+  }
+  .aboutContent2{
+    padding-bottom: 5vh;
+  }
+  footer{
+    margin: 2vh auto;
+    font-size: 0.5em;
+  }
 }
+
+
+
+
+
 
 @media screen and (min-width:550px) {
+  nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  nav a{
+    text-decoration: none;
+    padding:5px 20px;
+    font-size: 20px;
+    color: #919191;
+    border: 1px solid #F5F5F5;
+  }
+  nav{
+    position: fixed;
+    padding: 0;
+    left:0;
+    top:0;
+    right:0;
+    /* ????? */
+    text-align: center;
+    background-color: white;
+  }
+  .navhome, .changeColor{
+    color:#B28247;
+  }
 
+  .logo{
+    width: 160px;
+    display: block;
+    /* ??????? text-align: center; */
+    margin: 0 auto;
+    padding: 150px 0 100px 0;
+  }
+  .name{
+    font-size: 60px;
+    letter-spacing: 8px;
+  }
+  .uxDesigner{
+    font-size: 20px;
+    padding: 40px 0 100px 0;
+    letter-spacing: 3px;
+
+  }
+
+
+  /* potfolio */
+  .portfolio{
+    background-color: #F5F5F5;
+
+  }
+  #portfolioTitle{
+    font-size: 35px;
+    padding: 150px 0 60px 0;
+  }
+  .project{
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    margin:50px auto;
+    text-align: center;
+    background-color: white;
+    line-height: 200px;
+    /* ???? */
+    vertical-align: middle;
+
+  }
+
+  .roadlike, .graphicDesign{
+    margin-bottom: 150px;
+  }
+
+  /* grid */
+  .gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  /* about me */
+  #aboutContainer{
+    padding: 40px 0;
+    background-image: url('new_orlean.jpg');
+    background-size: cover;
+    /* ??? */
+  }
+  .aboutTitle{
+    font-size: 35px;
+    padding: 0 0 50px 0;
+    color:white;
+  }
+
+  .about{
+    width:400px;
+    margin: 100px auto;
+    padding: 100px 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .aboutContent1, .aboutContent2{
+    color:white;
+  }
+  .aboutContent1{
+    padding:20px 0;
+  }
+  .resumepage{
+    background-color: red;
+    text-align: center;
+  }
+
+  footer{
+    margin: 30px auto;
+    font-size: 12px;
+  }
 }
 
-@media screen and (min-width:800px) {
 
+
+
+
+
+@media screen and (min-width:800px) {
+  nav a{
+    text-decoration: none;
+    display: inline-block;
+    padding:0 20px;
+    font-size: 20px;
+    color: #919191;
+    border: none;
+  }
+  nav{
+    display: inline-block;
+    padding: 20px 0;
+    position: fixed;
+    left:0;
+    top:0;
+    right:0;
+    /* ????? */
+    text-align: center;
+    background-color: white;
+  }
+
+  .navhome, .changeColor{
+    color:#B28247;
+  }
+
+  .logo{
+    width: 160px;
+    display: block;
+    /* ??????? text-align: center; */
+    margin: 0 auto;
+    padding: 100px 0;
+  }
+  .name{
+    font-size: 70px;
+    letter-spacing: 10px;
+  }
+  .uxDesigner{
+    font-size: 25px;
+    padding: 40px 0 100px 0;
+    letter-spacing: 5px;
+
+  }
+
+
+  /* potfolio */
+  .portfolio{
+    background-color: #F5F5F5;
+
+  }
+  #portfolioTitle{
+    font-size: 35px;
+    padding: 150px 0 60px 0;
+  }
+  .project{
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    margin:50px auto;
+    text-align: center;
+    background-color: white;
+    line-height: 200px;
+    /* ???? */
+    vertical-align: middle;
+
+  }
+
+  .roadlike, .graphicDesign{
+    margin-bottom: 150px;
+  }
+
+  /* grid */
+  .gridContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  /* about me */
+  #aboutContainer{
+    padding: 60px 0;
+    background-image: url('new_orlean.jpg');
+    background-size: cover;
+  }
+  .aboutTitle{
+    font-size: 35px;
+    padding: 0 0 50px 0;
+    color:white;
+  }
+
+  .about{
+    width:600px;
+    margin: 100px auto;
+    padding: 100px 100px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .aboutContent1, .aboutContent2{
+    color:white;
+  }
+  .aboutContent1{
+    padding:20px 0;
+  }
+  .resumepage{
+    background-color: red;
+    text-align: center;
+  }
+
+  footer{
+    margin: 30px auto;
+    font-size: 12px;
+  }
 }
