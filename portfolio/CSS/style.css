@@ -4,10 +4,11 @@
 body{
   font-family: 'Open Sans';
 }
-.name, .uxDesigner, #portfolioTitle, .aboutTitle, footer{
+.name, .uxDesigner, #portfolioTitle, footer{
   color: #B28247;
   text-align: center;
 }
+
 nav a{
   text-decoration: none;
   display: inline-block;
@@ -16,7 +17,7 @@ nav a{
   color: #919191;
 }
 
-.navhome, .changeColor{
+.changeColor{
   color:#B28247;
 }
 
@@ -28,6 +29,27 @@ nav a{
   background-image: url('../pictures/fHit_cover.jpg');
   background-size: cover;
 }
+
+.taiwan{
+  background-image: url('../pictures/taiwan_cover.jpg');
+  background-size: cover;
+}
+
+.marbling{
+  background-image: url('../pictures/marbling_cover.jpg');
+  background-size: cover;
+}
+
+.snow{
+  background-image: url('../pictures/snow_cover.jpg');
+  background-size: cover;
+}
+
+.dessert{
+  background-image: url('../pictures/dessert_cover.jpg');
+  background-size: cover;
+}
+
 .roadlike{
   background-image: url('../pictures/roadlike_cover.jpg');
   background-size: cover;
@@ -36,7 +58,11 @@ nav a{
   background-image: url('../pictures/graphicDesign_cover.jpg');
   background-size: cover;
 }
-.library a, .fHit a, .roadlike a, .graphicDesign a{
+
+
+
+
+.library a, .fHit a, .roadlike a, .graphicDesign a, .taiwan a, .marbling a, .rain a, .snow a, .dessert a{
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 2em 2em;
@@ -129,6 +155,7 @@ nav a{
   .aboutTitle{
     font-size: 2em;
     color:white;
+    text-align: center;
   }
 
   .about{
@@ -243,6 +270,7 @@ nav a{
     font-size: 35px;
     padding: 0 0 50px 0;
     color:white;
+    text-align: center;
   }
 
   .about{
@@ -361,6 +389,7 @@ nav a{
     font-size: 35px;
     padding: 0 0 50px 0;
     color:white;
+    text-align: center;
   }
 
   .about{

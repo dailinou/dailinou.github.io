@@ -2,8 +2,9 @@
 var portfolio_t = $('.portfolio').offset().top;
 var about_t = $('#aboutContainer').offset().top;
 
+// alert(portfolio_t-$('nav').height())
 $(document).scroll(function(){
-  if ($(this).scrollTop()< ( portfolio_t-$('nav').height() )  ){
+  if (  $(this).scrollTop()< ( portfolio_t-$('nav').height() )  ){
     $('.navhome').css({
       'color': '#B28247'
     });
@@ -13,7 +14,7 @@ $(document).scroll(function(){
     $('.navabout').css({
       'color':'#919191'
     });
-  } else if ($(this).scrollTop()>=( portfolio_t-$('nav').height() ) && $(this).scrollTop()<about_t-$('nav').height()) {
+  } else if ($(this).scrollTop()>=( portfolio_t-$('nav').height()) && $(this).scrollTop()<about_t-$('nav').height()) {
     $('.navhome').css({
       'color':'#919191',
     });
@@ -38,30 +39,14 @@ $(document).scroll(function(){
 
 
 $(document).ready(function(){
-  console.log('ready!');
+
   $(".navportfolio, .navabout").on("click", function(event) {
     // console.log($($(this).attr("href")).offset());
     var scrollTargetID = $(this).attr("href");
     var scrollPos = $(scrollTargetID).offset().top;
     scrollPos -= $("nav").height();
     $("html, body").animate({ scrollTop: scrollPos }, 500);
+    // alert(scrollPos);
     return false;
   });
-
-
-
-  // click nav color change
-  // $('nav a').click(function(){
-
-    // $(this).addClass('changeColor');
-    // $('nav a').not(this).css({
-    //   'color':'#919191'
-    // });
-    // $(this).css({
-    //   'color':'#B28247'
-    // });
-  // }) ????
-
-
-
 });
