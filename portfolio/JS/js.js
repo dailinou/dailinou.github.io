@@ -1,6 +1,6 @@
 // scroll nav color change
-var portfolio_t = $('.portfolio').offset().top;
-var about_t = $('#aboutContainer').offset().top;
+var portfolio_t = $('.portfolio').offset().top-200;
+var about_t = $('#aboutContainer').offset().top-100;
 
 // alert(portfolio_t-$('nav').height())
 $(document).scroll(function(){
