@@ -1,10 +1,10 @@
 // scroll nav color change
-var portfolio_t = $('.portfolio').offset().top-200;
-var about_t = $('#aboutContainer').offset().top-100;
+var portfolio_t = $('.portfolio').offset().top;
+var about_t = $('#aboutContainer').offset().top;
 
 // alert(portfolio_t-$('nav').height())
 $(document).scroll(function(){
-  if (  $(this).scrollTop()< ( portfolio_t-$('nav').height() )  ){
+  if (  $(this).scrollTop()< ( portfolio_t-$('nav').height()-1)  ){
     $('.navhome').css({
       'color': '#B28247'
     });
@@ -14,7 +14,7 @@ $(document).scroll(function(){
     $('.navabout').css({
       'color':'#919191'
     });
-  } else if ($(this).scrollTop()>=( portfolio_t-$('nav').height()) && $(this).scrollTop()<about_t-$('nav').height()) {
+  } else if ($(this).scrollTop()>=( portfolio_t-$('nav').height()-1) && $(this).scrollTop()<about_t-$('nav').height()-1) {
     $('.navhome').css({
       'color':'#919191',
     });
@@ -24,7 +24,7 @@ $(document).scroll(function(){
     $('.navabout').css({
       'color':'#919191'
     });
-  } else if($(this).scrollTop()>=about_t-$('nav').height()){
+  } else if($(this).scrollTop()>=about_t-$('nav').height()-1){
     $('.navhome').css({
       'color':'#919191',
     });
