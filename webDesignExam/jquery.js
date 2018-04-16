@@ -11,6 +11,4 @@ $(document).ready(function(){
     $('.pic1').show();
   })
 
-
-
 });
