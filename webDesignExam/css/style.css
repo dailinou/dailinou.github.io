@@ -4,6 +4,8 @@
 
 body{
   background-image: url('../images/sun-pattern.png');
+  margin:0;
+  padding:0;
 }
 
 .pic1, .pic2{
